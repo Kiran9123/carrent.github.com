@@ -27,7 +27,7 @@ background-image: url("background1s.jpg");
  {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 h1{
-    color:crimson;
+    color:greenyellow;
 }
 
 h3{
@@ -170,21 +170,27 @@ h3{
 
 
 
+marquee
+{
+background-color:blue;
+}
 
 
 
 
 
 
-
-
+h3{
+  text-decoration-color: chocolate;
+}
 
 
 </style>
 </head>
 <body>
 
-<h1 style="text-align:center;">Booking details</h1>
+<h1>Booking detail</h1>
+<marquee>"Book a Car and enjoy Your Ride"</marquee>
 
 
   <div class="input-container">
@@ -193,7 +199,8 @@ h3{
   </div>
   <div class="input-container">
     <i class="fa fa-volume-control-phone icon" aria-hidden="true"></i>
-    <input type="tel"  placeholder="PhoneNumber"  name="pno">
+    <input type="tel"  class="input-field"id="phone" placeholder="Mobile Number" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+
   </div>
 
   <div class="input-container">
@@ -204,10 +211,10 @@ h3{
   <div class="input-container">
       
     <i class="fa fa-calendar-minus-o icon" aria-hidden="true"></i>
-    <input class="input-field" type="date" start="issueDate" id="issueDate">
+    <input class="input-field" type="date" placeholder="IssueDate"start="issueDate" id="issueDate">
 </div>
 
-<h3>  ReturnDate </h3>
+<h3> ReturnDate </h3>
   <div class="input-container">
       
     <i class="fa fa-calendar-minus-o icon" aria-hidden="true"></i>
@@ -215,17 +222,19 @@ h3{
 </div>
 
     <div class="input-container">
-  <button id="myBtn"  class="input-field"  onclick="myfun()">Book a Car</button>
+  <button id="myBtn"  class="input-field"  onclick="myfun()">Book a Car</button><br
+  <div class="input-container">
+  <a href="index.html" class="button">Back</a><br>
+
   <div id="myModal" class="modal">
 
 
-    
 
     <!-- Modal content -->
     <div class="modal-content">
       <div class="modal-header">
         <span class="close">&times;</span>
-        <h2>Booking-Status</h2>
+        <h2>Booking-Details</h2>
       </div>
       <div class="modal-body">
         <p id="naa"></p>
@@ -257,7 +266,8 @@ h3{
 
 
 
-  <a href="index.html" class="input-field" >Back</a>
+    <marquee>Book a Car and enjoy Your Ride</marquee>
+
 
 
 <script>
